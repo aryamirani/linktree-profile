@@ -29,17 +29,7 @@ body {
 }
 
 .background-animation {
-    position: fixed;
-    top: -50%;
-    left: -50%;
-    width: 200%;
-    height: 200%;
-    background: radial-gradient(circle, rgba(139,92,246,0.15) 0%, transparent 60%),
-                radial-gradient(circle, rgba(56,189,248,0.1) 0%, transparent 60%);
-    background-position: 0% 0%, 100% 100%;
-    background-size: 50% 50%, 50% 50%;
-    animation: pulse 15s ease-in-out infinite alternate;
-    z-index: -1;
+    display: none;
 }
 
 @keyframes pulse {
@@ -73,9 +63,9 @@ body {
     margin: 0 auto 1.2rem;
     border-radius: 50%;
     padding: 4px;
-    background: linear-gradient(135deg, var(--accent), #38bdf8);
+    background: #333333;
     position: relative;
-    box-shadow: 0 8px 32px rgba(139, 92, 246, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
 }
 
 .profile-img {
